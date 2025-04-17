@@ -4,11 +4,13 @@
 
  
 
-#### O1: Develop a reliable method of detecting high-confidence false-positive Place locations. A high-confidence false-positive Place location is defined as a Place with over 0.75 confidence that is more than 10m from it's "correct" location. 
+#### O1: Develop a reliable method of detecting high-confidence false-positive duplicate Place locations. A high-confidence false-positive Place location is defined as a Place with over 0.75 confidence that is more than 10m from it's "correct" location. Duplicate Place locations are defined as more than one Place locations meant for the same entity. Examples are prevalent in larger entities, such as airports. 
 
 KR1: Create an algorithm to detect false positive Place locations. Generate a dataset of 5-10k misplaced locations.
 
-KR2: Create a benchmark to verify accuracy of aforementioned algorithm. Confirm that >95% of dataset is accurately false-positive Places. 
+KR2: Create an alogrithm to properly distingquish most significant place in the case of duplicates.  
+
+KR3: Create a benchmark to verify accuracy of aforementioned algorithm. Confirm that >95% of dataset is accurately false-positive Places. 
 
  
 
